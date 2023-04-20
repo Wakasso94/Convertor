@@ -16,15 +16,15 @@ convertBtn.addEventListener("click", function () {
 })
 
 function conversion(num1) {
-    let metersFeet = `${num1} meters = ${Number(num1 * 3.281).toFixed(2)} feet`
-    let feetMeters = `${num1} feet = ${Number(num1 / 3.281).toFixed(2)} meters`
+    const metersFeet = `${num1} meters = ${Number(num1 * 3.281).toFixed(2)} feet`
+    const feetMeters = `${num1} feet = ${Number(num1 / 3.281).toFixed(2)} meters`
     convertLength.innerHTML = `${metersFeet} | ${feetMeters}`;
 
-    let litersGallons = `${num1} liters = ${Number(num1 * 0.264).toFixed(2)} gallons`
-    let gallonsLiters = `${num1} gallons = ${Number(num1 / 0.264).toFixed(2)} liters`
+    const litersGallons = `${num1} liters = ${Number(num1 * 0.264).toFixed(2)} gallons`
+    const gallonsLiters = `${num1} gallons = ${Number(num1 / 0.264).toFixed(2)} liters`
     convertVolume.innerHTML = `${litersGallons} | ${gallonsLiters}`;
 
-    let kilosPounds = `${num1} kilos = ${Number(num1 * 2.204).toFixed(2)} pounds`
-    let poundsKilos = `${Number(num1 / 2.204).toFixed(2)} kilos`
+    const kilosPounds = `${num1} kilos = ${Number(num1 * 2.204).toFixed(2)} pounds`
+    const poundsKilos = `${Number(num1 / 2.204).toFixed(2)} kilos`
     convertMass.innerHTML = `${kilosPounds} | ${num1} pounda = ${poundsKilos}`;
 }
