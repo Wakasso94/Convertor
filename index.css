@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    background: #F4F4F4;
+    width: 550px;
+    height: 750px;
+    border-radius: 12px;
+    border: 5px solid #fff;
+}
+
+#first-section {
+    background: #6943FF;
+    color: white;
+    border-radius: 12px;    
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    width: 117px;
+    margin: 0px auto;       
+}
+
+#heading {
+    margin-top: 33px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;    
+}
+
+#convert-input {   
+    height: 83px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #B295FF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+#btn {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    height: 42px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D3D3D;
+    width: 117px
+}
+
+
+#length,#volume, #mass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    width: 500px;
+    margin: 25px 25px;
+    height: 110px;
+    border-radius: 5px
+}
+#p-length, #p-mass, #p-volume {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #353535;
+    margin: 9px 0px 5px 0px;
+}
+
+#h3-length, #h3-mass, #h3-volume {
+    margin: 5px 0px 5px 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: #5A537B;
+}
