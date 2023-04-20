@@ -10,15 +10,21 @@ const convertVolume = document.getElementById("p-volume");
 const convertMass = document.getElementById("p-mass");
 let convertInput = document.getElementById("convert-input");
 
-convertBtn.addEventListener("click", function() {
+convertBtn.addEventListener("click", function () {
     let inputValue = convertInput.value;
     conversion(inputValue);
 })
 
 function conversion(num1) {
-    let length = convertLength.innerHTML = `${num1} meters = ${Number(num1 * 3.281).toFixed(2)} feet | ${num1} feet = ${Number(num1 / 3.281).toFixed(2)} meters`;
-    
-    let volume = convertVolume.innerHTML = `${num1} liters = ${Number(num1 * 0.264).toFixed(2)} gallons | ${num1} gallons = ${Number(num1 / 0.264).toFixed(2)} liters`;
-    
-    let mass = convertMass.innerHTML = `${num1} kilos = ${Number(num1 * 2.204).toFixed(2)} pounds | ${num1} pounda = ${Number(num1 / 2.204).toFixed(2)} kilos`;
+    let metersFeet = `${num1} meters = ${Number(num1 * 3.281).toFixed(2)} feet`
+    let feetMeters = `${num1} feet = ${Number(num1 / 3.281).toFixed(2)} meters`
+    convertLength.innerHTML = `${metersFeet} | ${feetMeters}`;
+
+    let litersGallons = `${num1} liters = ${Number(num1 * 0.264).toFixed(2)} gallons`
+    let gallonsLiters = `${num1} gallons = ${Number(num1 / 0.264).toFixed(2)} liters`
+    convertVolume.innerHTML = `${litersGallons} | ${gallonsLiters}`;
+
+    let kilosPounds = `${num1} kilos = ${Number(num1 * 2.204).toFixed(2)} pounds`
+    let poundsKilos = `${Number(num1 / 2.204).toFixed(2)} kilos`
+    convertMass.innerHTML = `${kilosPounds} | ${num1} pounda = ${poundsKilos}`;
 }
